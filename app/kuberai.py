@@ -57,7 +57,6 @@ def answer_gold_question(message: str) -> Tuple[bool, str]:
         except Exception:
             pass
 
-    # Fallback heuristic (English only)
     msg = message.lower()
     gold_terms = [
         "gold", "digital gold", "sovereign gold bond", "sgb",
